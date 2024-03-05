@@ -93,45 +93,45 @@ class CircularQueueLinkedList:
         return self.size
 
 operations = [
-    ("enqueue", 1, "enqueue 1"),   # enqueue 1
-    ("enqueue", 2, "enqueue 2"),   # enqueue 2
-    ("enqueue", 3, "enqueue 3"),   # enqueue 3
-    ("peek", None, "peek 1"),      # peek 1
-    ("dequeue", None, "dequeue 1"),   # dequeue 1
-    ("dequeue", None, "dequeue 2"),   # dequeue 2
-    ("enqueue", 4, "enqueue 4"),   # enqueue 4
-    ("enqueue", 5, "enqueue 5"),   # enqueue 5
-    ("peek", None, "peek 3"),      # peek 3
-    ("enqueue", 6, "enqueue 6"),   # enqueue 6
-    ("enqueue", 7, "enqueue 7"),   # enqueue 7
-    ("enqueue", 8, "enqueue 8"),   # enqueue 8
-    ("enqueue", 9, "enqueue 9"),   # enqueue 9
-    ("enqueue", 10, "enqueue 10"),  # enqueue 10
-    ("enqueue", 11, "enqueue 11"),  # enqueue 11 
-    ("dequeue", None, "dequeue 3"),   # dequeue 3
-    ("dequeue", None, "dequeue 4"),   # dequeue 4
-    ("dequeue", None, "dequeue 5"),   # dequeue 5
-    ("dequeue", None, "dequeue 6"),   # dequeue 6
-    ("dequeue", None, "dequeue 7"),   # dequeue 7
-    ("dequeue", None, "dequeue 8"),   # dequeue 8
-    ("dequeue", None, "dequeue 9"),   # dequeue 9
-    ("dequeue", None, "dequeue 10"),  # dequeue 10
-    ("dequeue", None, "dequeue 11"),# dequeue 11
-    ("peek", None, "peek None"),   # peek None (queue is empty)
-    ("enqueue", 11, "enqueue 11"),  # enqueue 11
-    ("peek", None, "peek 11"),     # peek 11
-    ("dequeue", None, "dequeue 11"),  # dequeue 11
-    ("enqueue", 12, "enqueue 12"),  # enqueue 12
-    ("enqueue", 13, "enqueue 13"),  # enqueue 13
-    ("enqueue", 14, "enqueue 14"),  # enqueue 14
-    ("enqueue", 15, "enqueue 15"),  # enqueue 15
-    ("enqueue", 16, "enqueue 16"),  # enqueue 16
-    ("enqueue", 17, "enqueue 17"),  # enqueue 17
-    ("enqueue", 18, "enqueue 18"),  # enqueue 18
-    ("enqueue", 19, "enqueue 19"),  # enqueue 19
-    ("enqueue", 20, "enqueue 20"),  # enqueue 20
-    ("enqueue", 21, "enqueue 21"),  # enqueue 21
-    ("enqueue", 22, "enqueue None"),  # enqueue None (queue is full)
+    ("enqueue", 1, "enqueue 1"),
+    ("enqueue", 2, "enqueue 2"),
+    ("enqueue", 3, "enqueue 3"),
+    ("peek", None, "peek 1"),
+    ("dequeue", None, "dequeue 1"),
+    ("dequeue", None, "dequeue 2"),
+    ("enqueue", 4, "enqueue 4"),
+    ("enqueue", 5, "enqueue 5"),
+    ("peek", None, "peek 3"),
+    ("enqueue", 6, "enqueue 6"),
+    ("enqueue", 7, "enqueue 7"),
+    ("enqueue", 8, "enqueue 8"),
+    ("enqueue", 9, "enqueue 9"),
+    ("enqueue", 10, "enqueue 10"),
+    ("enqueue", 11, "enqueue 11"),
+    ("dequeue", None, "dequeue 3"),
+    ("dequeue", None, "dequeue 4"),
+    ("dequeue", None, "dequeue 5"),
+    ("dequeue", None, "dequeue 6"),
+    ("dequeue", None, "dequeue 7"),
+    ("dequeue", None, "dequeue 8"),
+    ("dequeue", None, "dequeue 9"),
+    ("dequeue", None, "dequeue 10"),
+    ("dequeue", None, "dequeue 11"),
+    ("peek", None, "peek None"),
+    ("enqueue", 11, "enqueue 11"),
+    ("peek", None, "peek 11"),
+    ("dequeue", None, "dequeue 11"),
+    ("enqueue", 12, "enqueue 12"),
+    ("enqueue", 13, "enqueue 13"),
+    ("enqueue", 14, "enqueue 14"),
+    ("enqueue", 15, "enqueue 15"),
+    ("enqueue", 16, "enqueue 16"),
+    ("enqueue", 17, "enqueue 17"),
+    ("enqueue", 18, "enqueue 18"),
+    ("enqueue", 19, "enqueue 19"),
+    ("enqueue", 20, "enqueue 20"),
+    ("enqueue", 21, "enqueue 21"),
+    ("enqueue", 22, "enqueue None"),
 ]
 
 
