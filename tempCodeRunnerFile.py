@@ -34,10 +34,6 @@ class CircularQueueArray:
 
     def is_full(self):
         return self.size == self.capacity
-    
-    def get_size(self):
-        return self.size
-    
 
 class Node:
     def __init__(self, data=None):
@@ -88,9 +84,6 @@ class CircularQueueLinkedList:
 
     def is_full(self):
         return self.size == self.capacity
-    
-    def get_size(self):
-        return self.size
 
 operations = [
     ("enqueue", 1, "enqueue 1"),   # enqueue 1
@@ -107,7 +100,7 @@ operations = [
     ("enqueue", 8, "enqueue 8"),   # enqueue 8
     ("enqueue", 9, "enqueue 9"),   # enqueue 9
     ("enqueue", 10, "enqueue 10"),  # enqueue 10
-    ("enqueue", 11, "enqueue 11"),  # enqueue 11 
+    ("enqueue", 11, "enqueue None"),  # enqueue None (queue is full)
     ("dequeue", None, "dequeue 3"),   # dequeue 3
     ("dequeue", None, "dequeue 4"),   # dequeue 4
     ("dequeue", None, "dequeue 5"),   # dequeue 5
@@ -116,7 +109,7 @@ operations = [
     ("dequeue", None, "dequeue 8"),   # dequeue 8
     ("dequeue", None, "dequeue 9"),   # dequeue 9
     ("dequeue", None, "dequeue 10"),  # dequeue 10
-    ("dequeue", None, "dequeue 11"),# dequeue 11
+    ("dequeue", None, "dequeue None"),# dequeue None (queue is empty)
     ("peek", None, "peek None"),   # peek None (queue is empty)
     ("enqueue", 11, "enqueue 11"),  # enqueue 11
     ("peek", None, "peek 11"),     # peek 11
@@ -130,7 +123,7 @@ operations = [
     ("enqueue", 18, "enqueue 18"),  # enqueue 18
     ("enqueue", 19, "enqueue 19"),  # enqueue 19
     ("enqueue", 20, "enqueue 20"),  # enqueue 20
-    ("enqueue", 21, "enqueue 21"),  # enqueue 21
+    ("enqueue", 21, "enqueue None"),  # enqueue None (queue is full)
     ("enqueue", 22, "enqueue None"),  # enqueue None (queue is full)
 ]
 
@@ -152,7 +145,7 @@ for operation, value, expected_output in operations:
     # Check if the result matches the expected output
     if result_array == expected_output and result_linked_list == expected_output:
         print("Test: Success")
-        #print(f"    |Array: {result_array}\n    |linked List: {result_linked_list}") 
+        #print(f"    |Array: {result_array}\n    |linked List: {result_linked_list}")
     else:
         print("Test: Fail")
         print(" ", expected_output)
