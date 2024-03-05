@@ -132,4 +132,9 @@ if __name__ == '__main__':
 
 
 
-'''The second implementation of priority queue is faster. Why? dunno'''
+
+'''The second implementation (SortedPriotiyQueue) is faster. Its time complexity to enqueue is O(n) 
+in the worst case while the first implementation's time complexity to enqueue is O(nlogn). 
+The time complexity of merge sort with recurssion is O(nlogn), PriorityQueue's complexity
+is the same since it uses merge sort. SortedPriorityQueue just finds the index where the 
+new element should be placed. In it's worse case, it iterates though the whole queue n times.'''
