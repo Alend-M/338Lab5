@@ -15,7 +15,6 @@ def merge_sort(arr):
 
     return merge(left_half, right_half)
 
-
 def merge(left, right):
     result = []
     left_idx, right_idx = 0, 0
@@ -37,7 +36,6 @@ def merge(left, right):
         right_idx += 1
 
     return result
-
 
 class PriorityQueue:
     def __init__(self):
@@ -80,8 +78,6 @@ class SortedPriorityQueue:
             return None
         return self.queue.pop(0)  
 
-
-
 #Function to generate a list of random 1000 tasks, 
 # 1 = enqueue (probability 0.7), 0 = dequeue (probability 0.3)
 def generate_tasks(n):
@@ -99,24 +95,6 @@ def measure_performance(pq_class):
             #pq.dequeue()
     return pq
 
-def test_functions():
-    pq = PriorityQueue()
-    pq.enqueue(12)
-    pq.enqueue(1)
-    pq.enqueue(14)
-    pq.enqueue(7)
-    print("Priority Queue:", pq)
-    pq.dequeue()
-    print("Priority Queue:", pq)
-
-    spq = SortedPriorityQueue()
-    spq.enqueue(12)
-    spq.enqueue(1)
-    spq.enqueue(14)
-    spq.enqueue(7)
-    print(" Sorted Priority Queue:", spq)
-    spq.dequeue()
-    print(" Sorted Priority Queue:", spq)
 
 if __name__ == '__main__':
 
