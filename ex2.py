@@ -91,19 +91,19 @@ def measure_performance(pq_class):
     for i in instances:
         if instances[i] == 1:
             pq.enqueue(random.randint(0,100))
-        #elif instances[i] == 0:
-            #pq.dequeue()
+        elif instances[i] == 0:
+            pq.dequeue()
     return pq
 
 
 if __name__ == '__main__':
 
-    print("Performance of Regular Priority Queue Enqueue:")
+    print("Performance of Regular Priority Queue:")
     time_regular = timeit.timeit(lambda: measure_performance(PriorityQueue), number=100)
     print("Time taken:", time_regular)
     #print(measure_performance(PriorityQueue))
 
-    print("\nPerformance of Sorted Priority Enqueue:")
+    print("\nPerformance of Sorted Priority:")
     time_sorted = timeit.timeit(lambda: measure_performance(SortedPriorityQueue), number=100)
     print("Time taken:", time_sorted)
     #print(measure_performance(SortedPriorityQueue))
@@ -116,3 +116,12 @@ in the worst case while the first implementation's time complexity to enqueue is
 The time complexity of merge sort with recurssion is O(nlogn), PriorityQueue's complexity
 is the same since it uses merge sort. SortedPriorityQueue just finds the index where the 
 new element should be placed. In it's worse case, it iterates though the whole queue n times.'''
+
+'''
+Output I got: 
+Performance of Regular Priority Queue Enqueue:
+Time taken: 72.68572631
+
+Performance of Sorted Priority Enqueue:
+Time taken: 2.5206187409999927
+'''
